@@ -33,7 +33,6 @@
     <main class="main">
         <div class="container gutter-top">
             <!-- Header -->
-            <!-- Header -->
             <header class="header box">
                 <div class="header__left">
                     <div class="header__photo">
@@ -98,14 +97,26 @@
                 <aside class="col-12 col-md-12 col-lg-2">
                     <div class="sidebar box sticky-column">
                         <ul class="nav">
-                            <li class="nav__item"><a class="active" href="index.html"><i class="icon-user"></i>Sobre
-                                    Mim</a></li>
-                            <li class="nav__item"><a href="resume.html"><i class="icon-file-text"></i>Currículo</a></li>
-                            <li class="nav__item"><a href="works.html"><i class="icon-codesandbox"></i>Portifólio</a>
-                            </li>
-                            <!--<li class="nav__item"><a href="blog.html"><i class="icon-book-open"></i>Blog</a></li>-->
                             <li class="nav__item">
-                                <a href="contact.php">
+                                <a class="active" href="index.html">
+                                    <i class="icon-user"></i>
+                                    Sobre Mim
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="resume.html">
+                                    <i class="icon-file-text"></i>
+                                    Currículo
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="works.html">
+                                    <i class="icon-codesandbox"></i>
+                                    Portifólio
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="contact.html">
                                     <i class="icon-message-square"></i>
                                     Contato
                                 </a>
@@ -114,71 +125,72 @@
                     </div>
                 </aside>
 
-                <!-- Conteudo -->
+                <!-- Conteúdo do site -->
                 <div class="col-12 col-md-12 col-lg-10">
                     <div class="box box-content">
-                        <div class="pb-2">
-                            <h1 class="title title--h1 first-title title__separate">Contato</h1>
-                        </div>
+                        <!-- Sobre Mim  -->
+                        <div class="pb-0 pb-sm-2">
+                            <h1 class="title title--h1 first-title title__separate">Sobre Mim</h1>
+                            <p>Desde criança sou apaixonado por tecnologias. Comecei meus estudos em programação em 2014
+                                quando iniciei o
+                                bacharelado em Sistemas de Informação, curso que concluí em 2020. Na faculdade,
+                                desenvolvi diversos projetos em Java e um particular interesse pelos
+                                algoritmos evolutivos. Pretendo iniciar os mais breve um mestrado na
+                                área de inteligência artificial. Sou técnico de informações geográficas
+                                e estatísticas do IBGE. Em fase de construção de novos conhecimentos com
+                                ênfaze em Programação WEB e Ciência de Dados. Sou cristão, marido e pai. </p>
 
-                        <!-- Contato -->
 
-                        <form action="email.php" method="post" id="contact-form" class="contact-form"
-                            data-toggle="validator">
-                            <div class="row">
-                                <div class="form-group col-12 col-md-6">
-                                    <input type="text" class="form-control" id="nameContact" name="nameContact"
-                                        placeholder="Nome" required="required" autocomplete="on"
-                                        oninvalid="setCustomValidity('Fill in the field')"
-                                        onkeyup="setCustomValidity('')">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                                <div class="form-group col-12 col-md-6">
-                                    <input type="phone" class="form-control" id="phoneContact" name="phoneContact"
-                                        placeholder="Telefone" required="required" autocomplete="on"
-                                        oninvalid="setCustomValidity('Email is incorrect')"
-                                        onkeyup="setCustomValidity('')">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                                <div class="form-group col-12 col-md-12">
-                                    <input type="email" class="form-control" id="emailContact" name="emailContact"
-                                        placeholder="Email" required="required" autocomplete="on"
-                                        oninvalid="setCustomValidity('Email is incorrect')"
-                                        onkeyup="setCustomValidity('')">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                                <div class="form-group col-12 col-md-12">
-                                    <textarea class="textarea form-control" id="messageContact" name="messageContact"
-                                        placeholder="Mensagem" rows="4" required="required"
-                                        oninvalid="setCustomValidity('Fill in the field')"
-                                        onkeyup="setCustomValidity('')"></textarea>
-                                    <div class="help-block with-errors"></div>
+                            <div>
+
+                                <!-- Clients -->
+                                <div class="mt-4">
+                                    <h2 class="title title--h3">Clientes</h2>
+
+                                    <div class="swiper-container js-carousel-clients">
+                                        <div class="swiper-wrapper">
+                                            <!-- Item client -->
+                                            <div class="swiper-slide">
+                                                <a href="#">
+                                                    <img src="assets/img/ibge.png" style="background-color: #FFF;"
+                                                        alt="IBGE logo"
+                                                        title="Instituto Brasileiro de Geografia e Estatística" /></a>
+                                            </div>
+
+                                            <!-- Item client -->
+                                            <div class="swiper-slide">
+                                                <a href="#"><img src="assets/img/igreja.png" style="background-color: #FFF; 
+                                                 " alt="Igreja logo"
+                                                        title="A Igreja de Jesus Cristo dos Santos dos Últimos Dias" /></a>
+                                            </div>
+                                            <!-- Item client -->
+                                            <div class="swiper-slide">
+                                                <a href="#"><img src="assets/img/fina_arte.jpg"
+                                                        style="background-color: #FFF;" alt="FINA ARTE logo"
+                                                        title="Fina Arte" /></a>
+                                            </div>
+                                            <!-- Item client -->
+                                            <div class="swiper-slide">
+                                                <a href="#">
+                                                    <img src="assets/img/amor_gaucho.jpg"
+                                                        style="background-color: #FFF;" alt="Amor Gaúcho Logo"
+                                                        title="Amor Gaúcho" /></a>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="swiper-pagination"></div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-12 col-md-6 order-2 order-md-1 text-center text-md-left">
-                                    <div id="validator-contact" class="hidden"></div>
-                                </div>
-                                <div class="col-12 col-md-6 order-1 order-md-2 text-right">
-                                    <button type="submit" class="btn"><i class="font-icon icon-send"></i>
-                                        Enviar</button>
-                                </div>
-                            </div>
-                        </form><br><br><br>
 
-                        <div class="map" id="map">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121147.47450140605!2d-49.30179426800482!3d-18.39928647831316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a10da6445330e3%3A0x5a0e24b69adc8858!2sItumbiara%2C%20GO!5e0!3m2!1spt-BR!2sbr!4v1605201603584!5m2!1spt-BR!2sbr"
-                                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
-                                aria-hidden="false" tabindex="0"></iframe>
+                            <!-- Footer -->
+                            <footer class="footer">
+                                © Wânder de Souza Santos
+                            </footer>
                         </div>
                     </div>
-
-                    <!-- Footer -->
-                    <footer class="footer">© Wânder de Souza Santos</footer>
                 </div>
-            </div>
-        </div>
     </main>
 
     <!-- SVG masks -->
@@ -200,7 +212,7 @@
     <script src="assets/js/plugins.min.js"></script>
     <script src="assets/js/common.js"></script>
 
-    <script src="assets/demo/plugins-demo.js"></script>
+
 </body>
 
 </html>
